@@ -1007,8 +1007,12 @@ if (strcasecmp(login_type, "User") == 0)
         }
 
         printf("\n\nPress Enter to go back to menu !!");
-
-        pause_console();
+        if(option==1){
+            getchar();
+        }
+        else{
+            pause_console();
+        }
 
         goto Menu;
 
